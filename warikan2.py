@@ -4,10 +4,10 @@
 
 """
 
-
 def warikan(amount, number_of_people):
-    return f"1人あたり:{amount // number_of_people}円, 端数:" \
-        f" {amount % number_of_people}円"
+    quotinet = amount // number_of_people
+    remainder = amount % number_of_people
+    return f'1人あたり:{quotinet}円, 端数: {remainder}円'
 
 
 print(warikan(amount=1500, number_of_people=3))
